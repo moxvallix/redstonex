@@ -1,0 +1,21 @@
+Add to redstone interactions:
+- Levers *
+- Directional powering detection (North, East, South and West) Tags powered_north etc. *
+- Configurable tick delay *
+- Redstone nearby detection *
+
+Changes to RedstoneX:
+- Repeater atop impulse to change speed
+- Book instead of carrot on stick
+- And gate only signal out to repeater *
+- Impulse only on when powered
+
+Components Coded:
+- AND
+- OR
+- NOT
+- NAND
+- NOR
+- XOR
+- XNOR
+- DELAYER
