@@ -6,6 +6,6 @@ execute as @a[nbt={SelectedItem:{id:"minecraft:redstone_block"}}] if entity @s[n
 
 scoreboard players reset @e[scores={redstonex=1..}] redstonex
 
-execute as @e[tag=redstonex] at @s if block ~ ~ ~ minecraft:air run function redstonex_trig:block_remove
+execute as @e[tag=direction] at @s if block ~ ~-1 ~ minecraft:air run function redstonex_trig:block_remove
 execute as @e[tag=redstonex] at @s if entity @a[distance=..4] run data modify entity @s CustomNameVisible set value 1b
 execute as @e[tag=redstonex] at @s if entity @a[distance=4..] run data modify entity @s CustomNameVisible set value 0b
